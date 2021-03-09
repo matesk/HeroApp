@@ -24,4 +24,9 @@ export class LoginComponent {
 
   }
 
+  logout() {
+    this.authService.logout();
+    this.router.navigate(['.']);
+  }
+
 }
